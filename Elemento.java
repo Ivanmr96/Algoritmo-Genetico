@@ -1,3 +1,39 @@
+/* ESTUDIO DE INTERFAZ
+ * 
+ * 	Propiedades:
+ * 		-> Básicas:
+ * 			* ADN: char[], consultable, modificable
+ * 			* fraseObjetivo: String, consultable, modificable
+ * 	
+ * 		-> Derivadas:
+ * 			* forma: int, consultable (Depende de su ADN y su fraseObjetivo)
+ * 
+ * 		-> Compartidas: No hay
+ * 
+ * 	Restricciones: No hay
+ * 
+ * 	Funcionalidades añadidas:
+ * 		- Cruzar el elemento con otro
+ * 		- Mutar el elemento
+ */
+ 
+ /* INTERFAZ
+  * 
+  * public String getFraseObjetivo();
+  * public void setFraseObjetivo(String fraseObjetivo);
+  * 
+  * public char[] getADN(); 			//Devolverá el array entero, y a partir de él se podrá consultar la posicion del array deseada.
+  * 
+  * public void setADNPart(char caracter, int index);
+  * 
+  * public int getForma();
+  */
+  
+ /* METODOS AÑADIDOS
+  * 
+  * public void mutar();
+  */
+  
 public class Elemento
 {
 	private char[] ADN;
@@ -48,21 +84,14 @@ public class Elemento
 		return ret;
 	}
 	
-	public Elemento cruzarCon(Elemento otroPadre)
-	{
-		Elemento hijo = new Elemento(fraseObjetivo);
-		
-		for(int i = 0 ; i < fraseObjetivo.length() ; i++)
-			{
-				if(i % 2 == 0)
-					hijo.setADNPart(this.getADN()[i], i);
-				else
-					hijo.setADNPart(otroPadre.getADN()[i], i);
-			}
-		
-		return hijo;
-	}
-	
+	/* INTERFAZ
+	 * Comentario: Hace mutar al elemento, cambiando de forma aleatoria un caracter por otro completamente aleatorio.
+	 * Prototipo: public void mutar()
+	 * Entrada: No hay
+	 * Precondiciones: No hay
+	 * Salida: No hay
+	 * Postcondiciones: No devuelve nada, pero cambia el estado del Elemento, uno de sus caracteres será cambiado de forma aleatoria por otro.
+	 */
 	public void mutar()
 	{
 		this.setADNPart((char)((int)(Math.random() * 95 + 32)), (int)(Math.random() * this.getADN().length));

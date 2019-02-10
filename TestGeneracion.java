@@ -11,9 +11,10 @@ public class TestGeneracion
 		System.out.println();
 		System.out.println();
 		
+		System.out.println("hola");
 		poblacion.imprimir();
 		
-		Elemento elementoConMasForma = poblacion.getElementoConMasForma();
+		Elemento elementoConMasForma = poblacion.elementoConMasForma();
 		
 		System.out.println();
 		System.out.print("elementoConMasForma: ");
