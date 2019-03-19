@@ -2,16 +2,14 @@ public class TestGeneracion
 {
 	public static void main(String[] args)
 	{
-		Generacion poblacion = new Generacion("Hola, me llamo Ivan", 20);
+		Generacion poblacion = new Generacion("Hola Mundo", 20);
 		
 		poblacion.poblar();
 		
 		poblacion.imprimirForma();
 		
 		System.out.println();
-		System.out.println();
 		
-		System.out.println("hola");
 		poblacion.imprimir();
 		
 		Elemento elementoConMasForma = poblacion.elementoConMasForma();
