@@ -22,6 +22,4 @@
     Se cogerán las letras pares de un padre y las impares del otro para dar lugar a un nuevo elemento.
   
  5. **Mutación**: Debe existir una probabilidad (baja) de que se aplique una mutación al nuevo elemento,
-    En este caso, la mutación será cambiar un caracter de forma completamente aleatoria por otro.
-     
-[Arriba](https://github.com/Ivanmr96/Algoritmo-Genetico/blob/master/README.md#algoritmo-genetico-thumbsup)
+    En este caso, la mutación será cambiar un caracter de forma completamente aleatoria por otro
