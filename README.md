@@ -1,4 +1,4 @@
-﻿# Algoritmo-Genetico
+﻿# Algoritmo-Genetico :thumbsup:
 
  Programa que ejecutará un algoritmo genético que tendrá como objetivo una frase.
   
