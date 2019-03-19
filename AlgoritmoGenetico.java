@@ -48,16 +48,18 @@ public class AlgoritmoGenetico
 	public static void main (String[] args)
 	{
 		String fraseObjetivo;
-		int mutacionProbabilidad = 20;
+		int mutacionProbabilidad = 15;
 		char respuesta;
 		int generaciones = 0;
+		int cantidadPoblacion = 250;
 		Scanner teclado = new Scanner(System.in);
 		
 		//Leer frase objetivo
 		System.out.print("Introduce la frase objetivo: ");
 		fraseObjetivo = teclado.nextLine();
 
-		Generacion poblacion = new Generacion(fraseObjetivo, 10000);
+
+		Generacion poblacion = new Generacion(fraseObjetivo, cantidadPoblacion);
 		
 		//Poblar la poblacion
 		poblacion.poblar();
@@ -70,9 +72,10 @@ public class AlgoritmoGenetico
 			//Crear lista con los posibles padres
 			ArrayList<Elemento> posiblesPadres = poblacion.listaPosiblesPadres();
 			
-			System.out.println("Poblacion: " + posiblesPadres.size());
-	
-			Generacion siguienteGeneracion = new Generacion(fraseObjetivo, 100);
+			//System.out.println("Posibles padres: " + posiblesPadres.size());
+			//System.out.println("Poblacion: " + poblacion.tamanho());
+			//System.out.println("Forma total: " + poblacion.totalForma());
+			Generacion siguienteGeneracion = new Generacion(fraseObjetivo, cantidadPoblacion);
 			
 			//Mientras la siguienteGeneracion no este poblada al 100%
 			for(int j = 0 ; j < siguienteGeneracion.tamanho() ; j++)

@@ -30,7 +30,7 @@
   */
   
  /* METODOS AÑADIDOS
-  * 
+  *
   * public void mutar();
   */
   

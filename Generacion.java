@@ -151,7 +151,7 @@ public class Generacion
 			
 			for(int i = 0 ; i < this.tamanho() ; i++)
 			{
-				for(int j = 0 ; j < Math.pow(this.getElemento(i).getForma(), 3) ; j++)
+				for(int j = 0 ; j < Math.pow(this.getElemento(i).getForma(), 2) ; j++)
 				{
 					posiblesPadres.add(this.getElemento(i));
 				}
@@ -181,5 +181,17 @@ public class Generacion
 			}
 		
 		return hijo;
+	}
+	
+	public int totalForma()
+	{
+		int totalForma = 0;
+		
+		for(int i = 0 ; i < poblacion.length ; i++)
+		{
+			totalForma += poblacion[i].getForma();
+		}
+		
+		return totalForma;
 	}
 }
