@@ -8,6 +8,7 @@ public class TestGeneracion
 		
 		poblacion.imprimirForma();
 		
+		
 		System.out.println();
 		
 		poblacion.imprimir();
