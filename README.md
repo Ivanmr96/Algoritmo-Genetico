@@ -1,4 +1,4 @@
-﻿# Algoritmo-Genetico :bug:
+﻿# :bug: Algoritmo-Genetico :bug:
 
  Programa que ejecutará un algoritmo genético que tendrá como objetivo una frase.
   
