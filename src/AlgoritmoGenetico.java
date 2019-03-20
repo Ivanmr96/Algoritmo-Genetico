@@ -49,7 +49,7 @@ public class AlgoritmoGenetico
 	{
 		String fraseObjetivo;
 		int mutacionProbabilidad = 15;
-		char respuesta;
+		//char respuesta;
 		int generaciones = 0;
 		int cantidadPoblacion = 250;
 		Scanner teclado = new Scanner(System.in);
