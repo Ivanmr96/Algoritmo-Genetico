@@ -103,11 +103,11 @@ public class Generacion
 	public void imprimirForma()
 	{
 		for(int i = 0 ; i < poblacion.length ; i++)
-			{
-				System.out.println(poblacion[i].getADN());
-				System.out.println("Forma: " + poblacion[i].getForma());
-				System.out.println();
-			}
+		{
+			System.out.println(poblacion[i].getADN());
+			System.out.println("Forma: " + poblacion[i].getForma());
+			System.out.println();
+		}
 	}
 	
 	/* INTERFAZ
@@ -123,6 +123,7 @@ public class Generacion
 	{
 		Elemento ElementoConMasForma = new Elemento(fraseObjetivo);
 		int mejorForma = 0;
+		
 		for(int i = 0 ; i < poblacion.length ; i++)
 		{
 			if(this.poblacion[i].getForma() > mejorForma)
@@ -183,6 +184,14 @@ public class Generacion
 		return hijo;
 	}
 	
+	/* INTERFAZ
+	 * Comentario: Calcula la suma total de forma de todos los elementos de la población
+	 * Prototipo: public int totalForma()
+	 * Entrada: No hay
+	 * Precondiciones: No hay
+	 * Salida: un entero con la forma total
+	 * Postcondiciones: Asociado al nombre devuelve un entero con la suma total de forma de todos lso elementos de la población.
+	 */
 	public int totalForma()
 	{
 		int totalForma = 0;
