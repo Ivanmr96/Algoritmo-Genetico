@@ -20,7 +20,7 @@
  * 			En este caso, la mutación será cambiar un caracter de forma completamente aleatoria por otro.
  * 
  *  Entrada:
- *  Salida:
+ *  Salida: si
  *  Restricciones:
  */
 /* PSEUCODOGIO GENERALIZADO
