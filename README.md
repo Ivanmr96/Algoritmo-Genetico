@@ -2,8 +2,8 @@
 
  Programa que ejecutará un algoritmo genético que tendrá como objetivo una frase.
   
- Un algoritmo genetico hace evolucionar una población de elementos, sometiendola a 
- una selección, decidiendo cuales son los elementos mejores adaptados, hasta llegar a un objetivo.
+ Un algoritmo genetico hace evolucionar una población de elementos, sometiéndola a 
+ una selección, decidiendo cuáles son los elementos mejores adaptados, hasta llegar a un objetivo.
 
  El algoritmo tiene los siguientes pasos:
 
@@ -22,4 +22,4 @@
     Se cogerán las letras pares de un padre y las impares del otro para dar lugar a un nuevo elemento.
   
  5. **Mutación**: Debe existir una probabilidad (baja) de que se aplique una mutación al nuevo elemento,
-    En este caso, la mutación será cambiar un caracter de forma completamente aleatoria por otro
+    En este caso, la mutación será cambiar un caracter de forma completamente aleatoria por otro.
